@@ -16,11 +16,6 @@ type CardProps = {
   children?: React.ReactNode;
 };
 
-type Project = {
-  title: string;
-  blurb: string;
-  tags: string[];
-};
 
 type SkillsMarqueeProps = {
   items?: string[];
@@ -313,4 +308,3 @@ export default function Portfolio() {
     </div>
   );
 }
-
