@@ -128,7 +128,7 @@ const Section: React.FC<SectionProps> = ({ id, title, eyebrow, children }) => (
 );
 
 const Card: React.FC<CardProps> = ({ children, className }) => (
-  <div className={cls("group rounded-2xl border border-white/10 bg-slate-900/80 shadow-sm hover:shadow-xl transition-shadow", className)}>
+  <div className={cls("group rounded-2xl border border-white/5 bg-slate-900/80 shadow-sm hover:shadow-xl transition-shadow", className)}>
     {children}
   </div>
 );
@@ -169,11 +169,11 @@ export default function Portfolio() {
   }, []);
 
   return (
-    <div className="min-h-dvh antialiased bg-slate-950 text-slate-200 selection:bg-indigo-500/40">
+    <div className="min-h-dvh antialiased bg-transparent text-slate-200 selection:bg-indigo-500/40">
       <Background />
 
       {/* Header */}
-      <header className="sticky top-0 z-50 backdrop-blur border-b border-white/10 bg-slate-950/70">
+      <header className="sticky top-0 z-50 backdrop-blur border-b border-white/10 bg-slate-950/70 text-white">
         <nav className="mx-auto flex max-w-6xl items-center justify-between px-4 sm:px-6 lg:px-8 h-16">
           <a href="#home" className="font-semibold tracking-tight text-white">{DATA.name}</a>
           <div className="flex items-center gap-4 text-sm">
@@ -313,3 +313,4 @@ export default function Portfolio() {
     </div>
   );
 }
+
