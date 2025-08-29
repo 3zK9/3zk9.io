@@ -35,7 +35,7 @@ const DATA = {
   linkedin: "https://www.linkedin.com/in/eric-youmans/",
   // Serve from Vite public/ so it works in dev and Pages
   resumeUrl: `${import.meta.env.BASE_URL}resume.pdf`,
-  skills: ["React", "Next.js", "TypeScript", "JavaScript", "Tailwind CSS", "Node.js", "C/Embedded C", "Python", "Java", "JAX", "PyTorch", "TensorFlow", "Git", "Linux", "Pandas", "NumPy", "Matplotlib", "Zephyr RTOS"],
+  skills: ["React", "TypeScript", "JavaScript", "Tailwind CSS", "Node.js", "C/Embedded C", "Python", "Java", "JAX", "PyTorch", "TensorFlow", "Git", "Linux", "Pandas", "NumPy", "Matplotlib", "Zephyr RTOS"],
   education: [
     { school: "University of Texas, Austin, TX", degree: "Master of Science in Artificial Intelligence, 4.0 GPA", period: "Aug. 2024 – Present" },
     { school: "University of Maryland, College Park, MD", degree: "Bachelor of Science in Computer Science and Economics, 3.31 GPA", period: "May 2021 – Dec. 2023" },
