@@ -28,13 +28,13 @@ const DATA = {
   name: "Eric Youmans",
   role: "Software Engineer",
   tagline:
-    "Software Engineer with expertise in Embedded Systems, Machine Learning, and Web Development.",
+    "Software Engineer with experience in Machine Learning, Web Development and Embedded Systems, passionate about building impactful technology.",
   location: "Washington, DC",
-  email: "mailto:eric@example.com",
-  github: "https://github.com/username",
-  linkedin: "https://www.linkedin.com/in/username/",
+  email: "mailto:ery@utexas.edu",
+  github: "https://github.com/3zk9",
+  linkedin: "https://www.linkedin.com/in/eric-youmans/",
   resumeUrl: "/resume.pdf",
-  skills: ["React", "Next.js", "TypeScript", "JavaScript (ES202x)", "Tailwind CSS", "HTML / CSS", "Node.js"],
+  skills: ["React", "Next.js", "TypeScript", "JavaScript", "Tailwind CSS", "Node.js", "C/Embedded C", "Python", "Java", "JAX", "PyTorch", "TensorFlow", "Git", "Linux", "Pandas", "NumPy", "Matplotlib", "Zephyr RTOS"],
   education: [
     { school: "University of Texas, Austin, TX", degree: "Master of Science in Artificial Intelligence, 4.0 GPA", period: "Aug. 2024 – Present" },
     { school: "University of Maryland, College Park, MD", degree: "Bachelor of Science in Computer Science and Economics, 3.31 GPA", period: "May 2021 – Dec. 2023" },
@@ -48,7 +48,7 @@ const DATA = {
       bullets: [
         "Developed multiple data collection algorithms in C tailored for proprietary hardware, resulting in a 30% increase in data acquisition efficiency.",
         "Engineered machine learning algorithms with TensorFlow, LiteRT, and Python, improving prediction accuracy by ~25%.",
-        "Led 4 interns, running weekly stand-ups and providing on-site support.",
+        "Led multiple interns, running weekly stand-ups and providing on-site support.",
         "Collaborated with cross-functional teams to improve efficiency on multi-team projects.",
       ],
     },
@@ -273,7 +273,7 @@ export default function Portfolio() {
       </Section>
 
       {/* Contact */}
-      <Section id="contact" title="Let's work together" eyebrow="Contact">
+      <Section id="contact" title="Let's connect" eyebrow="Contact">
         <Card className="p-6">
           <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
             <div>
