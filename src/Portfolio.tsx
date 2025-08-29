@@ -33,7 +33,8 @@ const DATA = {
   email: "mailto:ery@utexas.edu",
   github: "https://github.com/3zk9",
   linkedin: "https://www.linkedin.com/in/eric-youmans/",
-  resumeUrl: "/resume.pdf",
+  // Serve from Vite public/ so it works in dev and Pages
+  resumeUrl: `${import.meta.env.BASE_URL}resume.pdf`,
   skills: ["React", "Next.js", "TypeScript", "JavaScript", "Tailwind CSS", "Node.js", "C/Embedded C", "Python", "Java", "JAX", "PyTorch", "TensorFlow", "Git", "Linux", "Pandas", "NumPy", "Matplotlib", "Zephyr RTOS"],
   education: [
     { school: "University of Texas, Austin, TX", degree: "Master of Science in Artificial Intelligence, 4.0 GPA", period: "Aug. 2024 – Present" },
