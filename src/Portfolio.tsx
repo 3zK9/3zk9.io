@@ -147,9 +147,10 @@ const SkillsMarquee: React.FC<SkillsMarqueeProps> = ({ items = [] }) => {
 // Background redesign: smoother gradient with radial glow, no rectangle
 const Background: React.FC = () => (
   <div aria-hidden className="pointer-events-none fixed inset-0 -z-10">
-    <div className="absolute inset-0 bg-black bg-gradient-to-tr from-indigo-950 via-slate-950 to-black" />
-    <div className="absolute left-[20%] top-[10%] h-[40vmax] w-[40vmax] rounded-full bg-fuchsia-600/10 blur-[120px] animate-pulse-slow" />
-    <div className="absolute right-[15%] bottom-[10%] h-[35vmax] w-[35vmax] rounded-full bg-indigo-500/15 blur-[120px] animate-pulse-slow" />
+    {/* Use explicit sRGB gradient to avoid OKLCH differences across browsers */}
+    <div className="absolute inset-0 bg-[linear-gradient(to_top_right,#070812,#0a0a14,#000000)]" />
+    <div className="absolute left-[20%] top-[10%] h-[40vmax] w-[40vmax] rounded-full bg-[rgba(236,72,153,0.08)] blur-[120px] animate-pulse-slow" />
+    <div className="absolute right-[15%] bottom-[10%] h-[35vmax] w-[35vmax] rounded-full bg-[rgba(99,102,241,0.12)] blur-[120px] animate-pulse-slow" />
   </div>
 );
 
