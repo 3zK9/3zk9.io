@@ -77,6 +77,12 @@ const DATA = {
   ],
   projects: [
     {
+      title: "Echo",
+      blurb: "Designed and developed a full-stack web application emualating a twitter-like social media platform \
+      with a developer-focused UI, such as Markdown editing and code highlighting.",
+      tags: ["TypeScript/Javascript", "Next.js/React", "Tailwind CSS", "PostgreSQL", "Prisma", "Supabase", "Vercel"],
+    },
+    {
       title: "Tiny Shakespeare Language Model",
       blurb: "Developed bigram and multi-head attention models in PyTorch, re-implemented in JAX for functional ML experience.",
       tags: ["PyTorch", "JAX", "NLP"],
