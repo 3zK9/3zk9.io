@@ -1,0 +1,38 @@
+name: Build docs (GitHub Pages)
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build site to docs/
+        env:
+          # Optional: set in repository Secrets to enable GA (used in index.html)
+          VITE_GA_ID: ${{ secrets.VITE_GA_ID }}
+        run: npm run build
+
+      - name: Commit docs output
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "chore(docs): build site [skip ci]"
+          file_pattern: docs/**
+

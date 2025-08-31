@@ -4,9 +4,70 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Eric Youmans — Portfolio</title>
+
+    <!-- Canonical -->
+    <link rel="canonical" href="https://www.ericyoumans.com/" />
+
+    <!-- Basic SEO -->
+    <meta name="description" content="Eric Youmans — Software Engineer specializing in ML, web, and embedded systems. View experience, projects, and resume." />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#0b0b12" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.ericyoumans.com/" />
+    <meta property="og:title" content="Eric Youmans — Portfolio" />
+    <meta property="og:description" content="Software Engineer specializing in ML, web, and embedded systems." />
+    <!-- If you add a social image later, update the following: -->
+    <!-- <meta property="og:image" content="https://www.ericyoumans.com/social-card.png" /> -->
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Eric Youmans — Portfolio" />
+    <meta name="twitter:description" content="Software Engineer specializing in ML, web, and embedded systems." />
+
+    <!-- Icons -->
+    <link rel="icon" href="/vite.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="/vite.svg" />
+    <link rel="mask-icon" href="/vite.svg" color="#6366f1" />
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Eric Youmans",
+        "url": "https://www.ericyoumans.com/",
+        "jobTitle": "Software Engineer",
+        "sameAs": [
+          "https://github.com/3zk9",
+          "https://www.linkedin.com/in/eric-youmans/"
+        ]
+      }
+    </script>
+
+    <!-- Analytics (Google gtag). Provide VITE_GA_ID in env to enable. -->
+    <script type="module">
+      const GA_ID = import.meta.env.VITE_GA_ID;
+      if (GA_ID) {
+        const gtagScript = document.createElement('script');
+        gtagScript.async = true;
+        gtagScript.src = `https://www.googletagmanager.com/gtag/js?id=${GA_ID}`;
+        document.head.appendChild(gtagScript);
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){window.dataLayer.push(arguments);} // eslint-disable-line
+        gtag('js', new Date());
+        gtag('config', GA_ID);
+      }
+    </script>
   </head>
   <body style="background-color: #000;">
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
   </body>
+  <!--
+    Notes:
+    - Social image meta (og:image/twitter:image) is commented until an asset exists.
+    - Favicon currently points to vite.svg; replace with your own when ready.
+  -->
 </html>
