@@ -80,6 +80,7 @@ const DATA = {
       title: "Echo",
       blurb: "Designed and developed a full-stack web application emualating a twitter-like social media platform \
       with a developer-focused UI, such as Markdown editing and code highlighting.",
+      demoUrl: "https://echo-nine-xi.vercel.app/",
       tags: ["TypeScript/Javascript", "Next.js/React", "Tailwind CSS", "PostgreSQL", "Prisma", "Supabase", "Vercel"],
     },
     {
@@ -262,6 +263,28 @@ export default function Portfolio() {
                   <span key={t} className="rounded-full border border-white/20 bg-slate-800 px-3 py-1 text-xs text-slate-200">{t}</span>
                 ))}
               </div>
+              {Boolean((p as any).demoUrl) && (
+                <div className="mt-5">
+                  <a
+                    className="inline-flex items-center gap-2 rounded-xl border border-white/15 bg-gradient-to-r from-indigo-500/70 to-fuchsia-500/70 px-3.5 py-2 text-sm font-medium text-white shadow-[0_6px_20px_rgba(236,72,153,0.18)] transition-[transform,box-shadow] hover:translate-y-[-0.5px] hover:shadow-[0_8px_28px_rgba(236,72,153,0.28)] focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-fuchsia-400/50"
+                    href={(p as any).demoUrl}
+                    target="_blank"
+                    rel="noreferrer"
+                    aria-label={`Open demo for ${p.title}`}
+                  >
+                    Try it
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      className="h-4 w-4 opacity-80"
+                    >
+                      <path d="M7 17L17 7" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                      <path d="M10 7h7v7" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                    </svg>
+                  </a>
+                </div>
+              )}
             </Card>
           ))}
         </div>
